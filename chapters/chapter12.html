@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chapter 12 — Bhagavad Gita</title>
+  <meta name="description" content="Bhagavad Gita Chapter 12 with Sanskrit text, transliteration and meanings."/>
+  <link rel="stylesheet" href="../style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    .chapter-prev-next {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding: 3rem 1.5rem;
+      max-width: 880px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body data-page="chapter">
+<input type="hidden" id="chapter-id-data" value="12"/>
+
+<!-- HEADER -->
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="../index.html" class="back-btn" aria-label="Back to home">
+      <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+      <div class="logo-icon" style="width:32px;height:32px;font-size:1rem;" aria-hidden="true">🪷</div>
+      <span>Bhagavad Gita</span>
+    </a>
+
+    <div class="lang-toggle-wrap" role="group" aria-label="Language toggle">
+      <span class="lang-label"><i class="fa-solid fa-language" aria-hidden="true"></i> Meaning:</span>
+      <div class="toggle-pills">
+        <button class="toggle-pill active" id="btn-en" onclick="setLang('en')" aria-pressed="true">EN</button>
+        <button class="toggle-pill" id="btn-hi" onclick="setLang('hi')" aria-pressed="false">हिं</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- CHAPTER HERO -->
+<section class="chapter-hero" data-chapter-num="12" aria-labelledby="ch-title">
+  <div class="chapter-hero-content">
+    <span class="chapter-num-badge" id="ch-num-badge">Chapter 12 of 18</span>
+    <h1 id="ch-title">Loading…</h1>
+    <h2 id="ch-subtitle"></h2>
+    <p id="ch-description"></p>
+  </div>
+</section>
+
+<!-- SHLOKAS -->
+<main class="shlokas-section" id="main-content" role="main" aria-label="Shlokas of Chapter 12">
+  <div id="shlokas-container">
+    <!-- Populated by JavaScript -->
+    <div class="shloka-card">
+      <div class="shloka-card-body">
+        <span class="shimmer" style="width:90%;height:1.4em;display:block;margin-bottom:.5rem;"></span>
+        <span class="shimmer" style="width:80%;height:1.4em;display:block;"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Prev / Next Navigation -->
+  <nav id="chapter-prev-next" aria-label="Chapter navigation"></nav>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <span class="footer-om" aria-label="Om">ॐ</span>
+  <div class="footer-title">Bhagavad Gita — Chapter 12</div>
+  <p class="footer-tagline">"Yoga is the journey of the self, through the self, to the self."</p>
+  <div class="footer-divider" aria-hidden="true"></div>
+  <p class="footer-copy">&copy; 2025 Bhagavad Gita Web App — For spiritual education &amp; contemplation only.</p>
+</footer>
+
+<!-- Scroll to Top -->
+<button class="scroll-top" id="scrollTopBtn" onclick="scrollToTop()" aria-label="Scroll to top">
+  <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+</button>
+
+<!-- Toast -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="../data.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>
